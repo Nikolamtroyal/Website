@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 590px)" />
+  <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 591px) and (max-width: 790px)" />
+  <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 791px)" />
+  
+</head>
+
+<body>
+  <header>
+    <h1 class="welcome-header">SMART TECH</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutUs.html">About Us</a>
+    <a href="careers.html">Careers</a>
+  </nav>
+
+  <p>
+    We hire interns only from
+    <a href="https://www.mtroyal.ca/" target="_blank">Mount Royal University.</a>
+  </p>
+
+  <!--
+      id AND for must match 
+      name should be the same for all radio buttons as user can only select one option.
+      value does not need to match id (value gets sent once the form is sent.)
+      -->
+
+  <!-- CAREER OPTIONS -->
+  <fieldset>
+    <legend>Careers opportunities at Smart Tech</legend>
+    <form>
+
+      <!-- TABLE LAYOUT for CAREER OPTIONS -->
+      <table>
+        <tr>
+          <td>
+            <input type="radio" id="partTime" name="radioButton" value="part-time" />
+          </td>
+          <td><label for="partTime">Part Time</label></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" id="fullTime" name="radioButton" value="full-time" />
+          </td>
+          <td><label for="fullTime">Full Time</label></td>
+        </tr>
+        <tr>
+          <td><label for="position">Select Position:</label></td>
+          <td>
+            <select name="position" id="position">
+              <option value="Consultant">Consultant</option>
+              <option value="Hardware Tech">Hardware Tech</option>
+              <option value="Programmer">Programmer</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </fieldset>
+
+  <!-- PERSONAL INFORMATION -->
+  <fieldset>
+    <legend>Personal Information</legend>
+
+    <!-- TABLE LAYOUT for PERSONAL INFORMATION -->
+    <table>
+      <tr>
+        <td><label for="fname">Enter Your First Name:</label></td>
+        <td><input type="text" id="fname" name="fname" placeholder="John" autofocus></td>
+      </tr>
+      <tr>
+        <td><label for="lname">Enter Your Last Name:</label></td>
+        <td><input type="text" id="lname" name="lname" placeholder="Smith"></td>
+      </tr>
+      <tr>
+        <td><label for="phone">Enter Your Phone Number:</label></td>
+        <td><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="403-234-5678" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Enter Your Email:</label></td>
+        <td><input type="email" id="email" name="email" placeholder="name@mtroyal.ca" required></td>
+      </tr>
+    </table>
+  </fieldset>
+
+  <!-- Workplace Preferences -->
+  <fieldset>
+    <legend>Workplace Preferences</legend>
+    <input type="checkbox" id="In-person" name="sreset" value="one" />
+    <label for="In-person">Inperson</label>
+    <br>
+
+    <input type="checkbox" id="Remote" name="sreset" value="two" />
+    <label for="Remote">Remote</label>
+    <br>
+    <input type="checkbox" id="Hybrid" name="sreset" value="three" />
+    <label for="Hybrid">Hybrid</label>
+    <br>
+    <br>
+    <div class="textarea-container">
+      <textarea id="concerns" name="sreset" rows="6" cols="50">
+      Anything else that you would like SmartTech to know?
+      </textarea>
+    </div>
+    <br>
+    <div class="buttons-container">
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+    </div>
+  </fieldset>
+
+  <footer class="footer">
+    <p>&copy; 2025 Smart Tech. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
